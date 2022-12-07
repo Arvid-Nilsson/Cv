@@ -21,12 +21,13 @@ body{
 
 #menu{
     background-color: aqua;
-    height: 50%;
-    width: fit-content;
+    height: 200px;
+    width: 75px;
     position: absolute;
     right: 0px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
     padding-top: 10px;
 }
