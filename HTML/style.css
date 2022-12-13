@@ -1,7 +1,14 @@
+/* universal */
+
 body{
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .top-bar{
@@ -30,4 +37,19 @@ body{
     align-items: center;
     gap: 20px;
     padding-top: 20px;
+}
+
+/* home page */
+
+.home-body{
+    --h: 350px;
+    position: absolute;
+    right: 0px;
+    height: var(--h);
+    width: 75%;
+    background-color: blueviolet;
+    /*align div veticly*/
+    top: 0; 
+    bottom: 0; 
+    margin: auto;
 }
