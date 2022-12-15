@@ -4,6 +4,7 @@ body{
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+    height: 100%;
 }
 
 a{
@@ -52,4 +53,36 @@ a{
     top: 0; 
     bottom: 0; 
     margin: auto;
+
+    /*aligning text within*/
+    display: flex;
+    align-items: center;
+}
+
+#home-text{
+    width: fit-content;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 50vh;
+    margin: auto;
+
+}
+
+/*courses*/
+
+.courses-body{
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses-year{
+    height: 85%;
+    width: 18%;
+    background-color: #29037A;
+    color: white;
+    padding-left: 10px; 
 }
