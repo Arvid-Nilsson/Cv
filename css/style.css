@@ -91,3 +91,26 @@ a{
 .courses-points{
     padding-left: 10px;
 }
+
+/* me page */
+
+.me-body{
+    height: 60vh;
+    width: 50vw;
+    background-color: #29037A;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    color: white;
+}
+
+#me-heading{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.me-map{
+    width: 40%;
+    margin-left: 10px;
+}
+
