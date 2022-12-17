@@ -29,8 +29,8 @@ a{
 
 #menu{
     background-color: aqua;
-    height: 200px;
-    width: 75px;
+    height: 300px;
+    width: 100px;
     position: absolute;
     right: 0px;
     display: none;
@@ -76,13 +76,18 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .courses-year{
     height: 85%;
-    width: 18%;
+    width: 20%;
     background-color: #29037A;
     color: white;
-    padding-left: 10px; 
+    padding-left: 20px; 
+    border-radius: 10px;
+}
+
+.courses-points{
+    padding-left: 10px;
 }
