@@ -9,3 +9,7 @@ function toggleMenu() {
     x.style.display = "flex";
     }
 }
+
+function onload(){
+    url.searchParams.append('on', True);
+}
