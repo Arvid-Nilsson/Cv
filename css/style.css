@@ -1,12 +1,15 @@
 :root{
     --me-margin: 2%;
+    --int-margin: var(--me-margin);
+    --top-bar-size: 13vh;
+    --menu-button-size: 50px;
 }
 
 
 /* universal */
 
 body{
-    margin: 0px;
+    margin: 0;
     height: 100%;
 }
 
@@ -16,7 +19,7 @@ a{
 }
 
 .top-bar{
-    height: 75px;
+    height: var(--top-bar-size);
     background-color: gray;
     display: flex;
     justify-content: center;
@@ -24,10 +27,40 @@ a{
 }
 
 .menu-button{
+    --menu-placement: calc((var(--top-bar-size) - var(--menu-button-size)) / 2);
     position: absolute;
     right: 5px;
-    top: 12.5px;
-    height: 50px;
+    top: var(--menu-placement);
+    right: var(--menu-placement);
+    height: var(--menu-button-size);
+    width: var(--menu-button-size);
+
+    /* making button transparent */
+    background-color: transparent;
+    border: transparent;
+
+    /* aligning hamburger menu */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.bar1{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    border: transparent;
+    border-radius: 2px;
+}
+
+.bar2{
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    border: transparent;
+    border-radius: 2px;
 }
 
 #menu{
@@ -72,7 +105,7 @@ a{
 /*courses*/
 
 .courses-body{
-    height: calc(100vh - 75px);
+    height: calc(100vh - var(--top-bar-size));
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -130,3 +163,39 @@ a{
     text-align: center;
 }
 
+/*interests*/
+
+.int-body{
+    height: 60vh;
+    width: 50vw;
+    background-image: url("../Img/snow.webp");
+    background-size: cover;
+    color: white;
+    border-radius: 10px;
+    
+    /*center to viewport*/
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    
+
+    /*aligning paragpaph*/
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#int-heading{
+    color: black;
+    position: absolute;
+    top: var(--int-margin);
+    left: var(--int-margin);
+} 
+
+#int-paragraph{
+    color: black;
+    width: 40%;
+    height: 20%;
+    text-align: center;
+    margin-right: var(--int-margin);
+} 
