@@ -10,7 +10,6 @@
 
 <body>
     <script src="../js/app.js"></script>
-    
     <div class="top-bar">
         <h1>
             <a class="heading" href="index.html">CV hemsida</a> 
@@ -29,12 +28,19 @@
         <a href="contact.html">Kontakta mig</a>
     </div>
 
-    <div class="me-body">
-        <h2 id="me-heading">Om mig</h2>
-        <div class="me-flexbox">
-            <img src="../img/Map.png" alt="Picture not found" class="me-map">
-            <p id="me-paragraph">Hej Jag är en studiemotiverad sjuttonåring som går på NTI kronhus. Jag bor och är uppväxt i Älvängen som ligger ungefär 3 mil norr om göteborg.  </p>
-        </div>    
+    <div class="contact-body">
+        <h2 class="contact-heading">Kontakta mig</h2>
+        <form class="contact-form">
+            <label for="f-name">Förnamn</label><br>
+            <input type="text", id="f-name", name="f-name"><br>
+            <label for="l-name">Efternamn</label><br>
+            <input type="text", id="l-name", name="l-name"><br>
+            <label for="email">email</label><br>
+            <input type="text", id="email", name="emale"><br>
+            <label for="message" id="message-text">Medelande</label><br>
+            <textarea name="message" id="message" cols="30" rows="8"></textarea>
+
+        </form>
     </div>
 
 </body>

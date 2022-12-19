@@ -1,8 +1,10 @@
 :root{
+    --purple: #29037A;
     --me-margin: 2%;
     --int-margin: var(--me-margin);
     --top-bar-size: 13vh;
     --menu-button-size: 50px;
+    --contact-margin: 3%;
 }
 
 
@@ -13,6 +15,7 @@ body{
     height: 100%;
 }
 
+/* Heading and menu items */
 a{
     text-decoration: none;
     color: black;
@@ -26,6 +29,7 @@ a{
     align-self: center;
 }
 
+/*making menu button*/
 .menu-button{
     --menu-placement: calc((var(--top-bar-size) - var(--menu-button-size)) / 2);
     position: absolute;
@@ -64,7 +68,9 @@ a{
 }
 
 #menu{
-    background-color: aqua;
+    background-color: gray;
+    border: transparent;
+    border-bottom-left-radius: 5px;
     height: 300px;
     width: 100px;
     position: absolute;
@@ -77,13 +83,15 @@ a{
 }
 
 /* home page */
-
 .home-body{
     position: absolute;
     right: 0px;
     height: 350px;
     width: 75%;
-    background-color: blueviolet;
+    background-color: var(--purple);
+    border: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     
     /*align div veticly*/
     top: 0; 
@@ -97,6 +105,7 @@ a{
 
 #home-text{
     width: 300px;
+    color: white;
     text-align: center;
     position: absolute;
     left: calc(50% - 300px);
@@ -115,7 +124,7 @@ a{
 .courses-year{
     height: 85%;
     width: 20%;
-    background-color: #29037A;
+    background-color: var(--purple);
     color: white;
     padding-left: 20px; 
     border-radius: 10px;
@@ -130,12 +139,15 @@ a{
 .me-body{
     height: 60vh;
     width: 50vw;
-    background-color: #29037A;
+    background-color: var(--purple);
+    color: white;
+    border-radius: 10px;
+
+    /* center div to viewport */
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    color: white;
-    border-radius: 10px;
+    
 }
 
 #me-heading{
@@ -199,3 +211,41 @@ a{
     text-align: center;
     margin-right: var(--int-margin);
 } 
+
+/* contact */
+
+.contact-body{
+    width: 25%;
+    height: 65%;
+    background-color: var(--purple);
+    border: transparent;
+    border-radius: 10px;
+    color: white;
+    
+    /* center to viewport */
+    position: absolute;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.contact-heading{
+    margin-top: var(--contact-margin);
+    margin-left: var(--contact-margin);
+}
+
+.contact-form{
+    margin-left: var(--contact-margin);
+}
+
+#f-name, #l-name{
+    margin-bottom: 10px;
+}
+
+#email{
+    margin-bottom: 30px;
+}
+
+#message, #message-text{
+    margin-left: var(--contact-margin);
+}
