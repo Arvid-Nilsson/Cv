@@ -111,6 +111,13 @@ a{
     left: calc(50% - 300px);
 }
 
+#home-instagram{
+    width: 5%;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
 /*courses*/
 
 .courses-body{
