@@ -187,7 +187,7 @@ a{
 .int-body{
     height: 60vh;
     width: 50vw;
-    background-image: url("../img/snow.webp");
+    background-image: url("../img/snow.png");
     background-size: cover;
     color: white;
     border-radius: 10px;
